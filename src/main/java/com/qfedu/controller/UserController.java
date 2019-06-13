@@ -16,7 +16,7 @@ public class UserController {
 
         UsernamePasswordToken token = new UsernamePasswordToken(username, password);
         Subject subject = SecurityUtils.getSubject();
-
+        System.out.println();
         // 设置记住我
         if(isRemember == 1){
             token.setRememberMe(true);
